@@ -184,7 +184,7 @@ estim_1_latam %>%
 map(estim_1_latam, rt_tiempo) -> graficos
 
 
-graficos[[19]]
+
 
 
 
