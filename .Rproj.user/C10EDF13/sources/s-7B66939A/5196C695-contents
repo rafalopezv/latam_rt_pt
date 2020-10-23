@@ -1,0 +1,98 @@
+---
+title: "Número Efetivo de Reprodução em um determinado período de tempo (Rt)"
+output: 
+  html_document: 
+    css: style.css
+lang: es-CO
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(gt)
+library(reactable)
+library(repmis)
+library(dplyr)
+library(knitr)
+
+source("code/graficos_latam.R")
+
+Sys.setlocale(locale = "es_ES.UTF-8")
+```
+
+<br>
+<br>
+
+<small>Nesta seção apresentamos o cálculo semanal do Número Efetivo de Reprodução em função do tempo (Rt). O cálculo é atualizado semanalmente e realizado com base nas informações oficiais de pessoas falecidas e infectadas.
+
+Para calcular o Rt, o início da semana é considerado a partir do registro do primeiro caso de óbito e infecção em cada país. A partir disso, cada semana é composta pelos sete dias seguintes.
+
+O Rt mostra a velocidade de propagação semanal do vírus. Um Rt = 1 indica que durante aquela semana a epidemia não cresceu exponencialmente e permaneceu estabilizada; um Rt <1 indica que naquela semana a epidemia regrediu e ficou “sob controle”; um Rt > 1 indica que naquela semana a epidemia cresceu exponencialmente e pode ser considerada "fora de controle". Na pandemia atual, devemos observar o Rt para avaliar a transmissão viral e o importante é obter um Rt < 1 de forma consistente, semana após semana, até que a epidemia chegue ao fim.
+
+Qual a diferença entre R0 e Rt? Enquanto o R0 descreve o potencial de propagação inicial de uma infecção em uma população completamente suscetível, o número efetivo de reprodução, Rt, registra a transmissão uma vez que o vírus se propaga e as medidas de proteção são adotadas. 
+
+Veja [**aqui**](https://rafalopezv.io/static/avina/methodological_annex_english.pdf) uma explicação metodológica mais completa </small>
+<br>
+<br>
+<br>
+
+<h2 style = color: #000000;>
+    Número de reprodução em função do temp <span style = "color: #e61b72"><b>(Rt)</b></span> na última semana com base em <span style = "color: #e61b72"><b>casos confirmados</b></span>
+</h2>
+<br>
+<center><h4>Gráfico interativo: Passe o mouse sobre o gráfico para mais informações.</h4></center>
+<br>
+```{r, include = T, echo = F}
+rt_confirmados
+```
+<small><small><small>
+Own elaboration based on data from [Jhons Hopkins University](https://github.com/CSSEGISandData/COVID-19)
+</small></small></small>
+<br>
+<br>
+
+<h2 style = color: #000000;>
+    Número de reprodução efetiva <span style = "color: #e61b72"><b>(Rt value)</b></span> na última semana baseada em <span style = "color: #e61b72"><b>óbitos confirmados</b></span>
+</h2>
+
+<center><h4>Gráfico interativo: Passe o mouse sobre o gráfico para mais informações.</h4></center>
+<br>
+```{r, include = T, echo = F}
+rt_fallecidos
+```
+<small><small><small>
+Own elaboration based on data from [Jhons Hopkins University](https://github.com/CSSEGISandData/COVID-19)
+</small></small></small>
+<br>
+<br>
+<br>
+
+<h2 style = color: #000000;>
+    Série de tempo do número de reprodução efetiva <span style = "color: #e61b72"><b>(Rt values)</b></span> por semana e por país desde o primeiro caso <span style = "color: #e61b72"><b>confirmado e óbito</b></span>
+</h2>
+
+<center><h4>Gráfico interativo: Passe o mouse sobre o gráfico para mais informações. Você pode desativar as categorias de casos confirmados ou óbitos</h4></center>
+<br>
+```{r, include = T, echo = F}
+graficos[[1]]
+graficos[[2]]
+graficos[[3]]
+graficos[[4]]
+graficos[[5]]
+graficos[[6]]
+graficos[[7]]
+graficos[[8]]
+graficos[[9]]
+graficos[[10]]
+graficos[[11]]
+graficos[[12]]
+graficos[[13]]
+graficos[[14]]
+graficos[[15]]
+graficos[[16]]
+graficos[[17]]
+graficos[[19]]
+graficos[[20]]
+```
+<small><small><small>
+Own elaboration based on data from [Jhons Hopkins University](https://github.com/CSSEGISandData/COVID-19)
+</small></small></small>

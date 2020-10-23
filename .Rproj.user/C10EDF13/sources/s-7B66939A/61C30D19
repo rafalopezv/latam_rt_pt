@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1603421719480.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "231453765",
+    "id" : "61C30D19",
+    "lastKnownWriteTime" : 1603424845,
+    "last_content_update" : 1603424845857,
+    "path" : "~/Documents/latam_rt_pt/code/funciones.R",
+    "project_path" : "code/funciones.R",
+    "properties" : {
+        "cursorPosition" : "93,0",
+        "scrollLine" : "78"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1603331999365.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "357D1069",
+    "lastKnownWriteTime" : 140260746985473,
+    "last_content_update" : 1603331999365,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "44B9794A",
+        "caption" : "codigos",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=codigos&cache_key=44B9794A",
+        "displayedObservations" : "20",
+        "environment" : "",
+        "expression" : "codigos",
+        "object" : "codigos",
+        "preview" : "0",
+        "totalObservations" : "20",
+        "variables" : "4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
